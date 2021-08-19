@@ -1,0 +1,383 @@
+
+html,body,main{
+    margin: 0;
+    padding: 0;
+	width:100vw;
+	background-color:#fcfcfc
+}*{
+    box-sizing:border-box;
+}
+
+
+/* -------------------------------------------modal-window */
+
+/* modal-function */
+.modal-wrapper {
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 40px 10px;
+	text-align: center
+}
+
+#modal-img{ 
+	position:fixed;
+	z-index:100;
+	top: 1%;
+	right: 3%;
+}
+
+.modal-wrapper:not(:target) {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s, visibility .3s;
+}
+
+.modal-wrapper:target {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity .4s, visibility .4s;
+}
+
+.modal-wrapper::after {
+	display: inline-block;
+	height: 100%;
+	margin-left: -.05em;
+	vertical-align: middle;
+	content: ""
+}
+
+.modal-wrapper .modal-window {
+	box-sizing: border-box;
+	display: inline-block;
+	z-index: 20;
+	position: relative;
+	width: 60%;
+	height:70%;
+	max-width: 600px;
+	padding: 30px 30px 15px;
+	border-radius: 2px;
+	background: #fff;
+	box-shadow: 0 0 30px rgba(0, 0, 0, .6);
+	vertical-align: middle
+}
+
+
+.midashi{
+	text-align: center;
+	font-family:"ヒラギノ角ゴシック"; 
+	font-size:2vw;
+	font-weight:lighter;
+	top: 7%;
+	left:20%;
+}
+
+.p1{
+	text-align: center;
+	font-family:"ヒラギノ明朝 ProN";
+	font-weight:lighter;
+	color:#5c5c5c;
+	position: absolute;
+	width: 80%;
+	top:55%;
+	left:8%;
+}
+
+#zu{
+	position:absolute;
+	top: 30%;
+	right: 12%;
+}
+
+.modal-wrapper .modal-window .modal-content {
+	max-height: 80vh;
+	overflow-y: auto;
+}
+
+.modal-overlay {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .8)
+}
+
+/* batsu */
+.modal-wrapper .modal-close {
+	z-index: 20;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 35px;
+	color: #95979c !important;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 35px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0
+}
+
+.modal-wrapper .modal-close:hover {
+	color: #2b2e38 !important
+}
+
+/* ----------------------------------------1page */
+p{
+	width: 25vw;
+	height: 50vh;
+	top: 40%;
+	right: 7%;
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 1.5vw;
+	color:black;
+	position:absolute;
+}
+p2{
+	width: 25vw;
+	height: 50vh;
+	top: 50%;
+	right: 7%;
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 1.5vw;
+	color:black;
+	position:absolute;
+}
+
+.vertical{
+	writing-mode: vertical-rl;
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 2vw;
+	position:absolute;
+	bottom: 38px;
+	right: 2.2%;
+}
+
+.v_line_fix {
+	width: 5px;
+	height: 80vh;
+	margin-left: 96%;
+	margin-bottom:9%;
+	width:1.5px;
+	background-color:black;
+}
+
+
+.about-logo{
+	/* overflow: auto; */
+	
+	height: 100vh;
+	position: fixed;
+	z-index:100;
+	top: 0.1px;
+	left: 5%;
+}
+
+.about-im{
+	/* overflow: auto; */
+	
+	height: 100vh;
+	position: absolute;
+	left: 2%;
+}
+
+.im1{
+	top: 15%;
+}
+.im2{
+	top: 40%;
+}
+.im3{
+	top: 65%;
+}
+/* .im4{
+	top: 72%;
+} */
+
+
+
+
+
+
+
+
+
+/* -----------------------------------page guide */
+.maru1{
+	position: absolute;
+	top: 35%;
+	left: 1.5%;
+	color:#b5bbbc;
+}
+.maru2{
+	position: absolute;
+	top: 40%;
+	left: 1.5%;
+	color:#b5bbbc;
+}
+.maru3{
+	position: absolute;
+	top: 45%;
+	left: 1.5%;
+	color:#b5bbbc;
+}
+.maru4{
+	position: absolute;
+	top: 50%;
+	left: 1.5%;
+	color:#b5bbbc;
+}
+.maru5{
+	position: absolute;
+	top: 55%;
+	left: 1.5%;
+	color:#b5bbbc;
+}
+
+.maru_1{
+	position: absolute;
+	top: 34%;
+	left: 1%;
+	font-size: 2.2vw;
+	color:#dddcba;
+	
+}
+
+.maru_2{
+	position: absolute;
+	top: 38.5%;
+	left: 0.95%;
+	font-size: 2.2vw;
+	color:#a1b7bf;
+}
+
+.maru_3{
+	position: absolute;
+	top: 43.5%;
+	left: 0.95%;
+	font-size: 2.2vw;
+	color:#7e8482;
+}
+
+.maru_4{
+	position: absolute;
+	top: 48.5%;
+	left: 0.95%;
+	font-size: 2.2vw;
+	color:#e9ce99;
+}
+
+.maru_5{
+	position: absolute;
+	top: 54%;
+	left: 0.95%;
+	font-size: 2.2vw;
+	color:#4f7382;
+}
+
+/* maru_color */
+.m1{
+	color:#f3f3e6;
+}
+
+.m2{
+	color:#a1b7bf;
+}
+
+.m3{
+	color:#7e8482;
+}
+
+.m4{
+	color:#e9ce99;
+}
+
+.m5{
+	color:#4f7382;
+}
+
+/* ---------------------------------------------------what */
+.what{
+	scroll-snap-align: start;
+	scroll-snap-type: y mandatory;
+	position: relative;
+	height: 100vh;
+}
+.what_moji{
+	top: 70%;
+	right: 1%;
+	position:absolute;
+}
+
+.maru{
+	width: 20vw;
+	height: 50vh;
+	top: 30%;
+	right: 30%;
+	/* color:#fcfcfc; */
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 5vw;
+	position:absolute;
+}
+
+.kyu{
+	width: 20vw;
+	height: 50vh;
+	top: 30%;
+	right: 60%;
+	/* color:#fcfcfc; */
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 5vw;
+	position:absolute;
+}
+
+
+/* ----------------------------------------------------contents */
+.container {
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	height: 100vh;
+}
+
+
+.area {
+	scroll-snap-align: start;
+	height: 100vh;
+	position: relative;
+}
+
+img{
+	margin: 0 auto;	
+}
+
+.img{
+	top: 11%;
+	left: 5%;
+	position:absolute;
+}
+
+
+
+
+.moji{
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+	width: 20vw;
+	height: 50vh;
+	top: 58%;
+	right: 3%;
+	/* color:#fcfcfc; */
+	font-family:"ヒラギノ明朝 ProN"; 
+	font-size: 14vw;
+	position:absolute;
+	margin: 0;
+}
+
+
+
+
